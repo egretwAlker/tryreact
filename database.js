@@ -124,7 +124,7 @@ const data = [
   new Sentence(
     ["公共汽车不来"],
     ["Bus is the thing that doesn't come"],
-    ["バス", "が", [["来ない", "こない"]]],
+    ["バス", "が", [["来「こ」ない", "くる"]]],
     ["verb"]
   ),
   // 友達が来た
