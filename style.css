@@ -45,8 +45,41 @@ button.tag {
   transition: 0.15s;
 }
 
-button.tag:hover {
-  transform: scale(1.1);
+@media (hover: hover) {
+  button.tag:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (hover: none) {
+  button.tag {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  button.tag:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.5s;
+  }
+
+  button.tag:active:after {
+    transform: scale(0, 0);
+    opacity: 0.2;
+    transition: 0s;
+  }
 }
 
 #quiz {
@@ -81,8 +114,10 @@ button.tag:hover {
   transition: 0.15s;
 }
 
-.magnet:hover {
-  background-color: grey;
+@media (hover: hover) and (pointer: fine) {
+  .magnet:hover {
+    background-color: grey;
+  }
 }
 
 .current-target {
