@@ -28,64 +28,6 @@ function shuffle(array) {
   return array;
 }
 
-class Sentence {
-  constructor(chinese, english, sentence, tags) {
-    this.chinese = chinese;
-    this.english = english;
-    this.sentence = sentence;
-    this.tags = tags;
-  }
-
-  static joinFirst(s) {
-    return s.map((w) => (Array.isArray(w) ? w[0] : w)).join("");
-  }
-
-  getWords() {
-    return this.sentence.map((w) =>
-      Array.isArray(w) ? Sentence.joinFirst(w) : w
-    );
-  }
-
-  getStr() {
-    return this.getWords().join("");
-  }
-
-  getAnnotatedStr() {
-    const res = [];
-    this.sentence.forEach((w) => {
-      if (Array.isArray(w)) {
-        w.forEach((w2) => {
-          res.push(w2);
-        });
-      } else {
-        res.push(w);
-      }
-    });
-    return res;
-  }
-}
-
-const data = [
-  new Sentence(
-    ["梦的延续"],
-    ["The continuation of a dream"],
-    [[["夢", "ゆめ"]], "の", "つづき"],
-    ["『Again』", "anime"]
-  ),
-  new Sentence(
-    ["明明应该一直在追逐着的"],
-    ["I should have been chasing"],
-    [[["追", "お"], "いかけ", ["ていた", "る"]], "はず", "なのに"],
-    ["『Again』", "anime"]
-  ),
-  new Sentence(
-    ["曲折的道路"],
-    ["Curved pathes"],
-    [[["曲", "ま"], "が", ["りくねった", "る"]]],
-    ["『Again』", "anime"]
-  ),
-];
-
 // collect all the tags
 const tags = new Set();
 data.forEach((d) => {
