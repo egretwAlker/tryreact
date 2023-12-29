@@ -144,7 +144,7 @@ const data = [
   // 勉強はした
   new Sentence(
     ["学习了"],
-    ["Study is the thing that I did"],
+    ["As for study, I did"],
     [[["勉強", "べんきょう"]], "は", [["した", "する"]]],
     ["verb"]
   ),
