@@ -87,8 +87,8 @@ const data = [
   ),
   // ボブもしない
   new Sentence(
-    ["鲍勃也不玩"],
-    ["Bob also doesn't play"],
+    ["鲍勃也不做"],
+    ["Bob also doesn't"],
     ["ボブ", "も", [["しない", "する"]]],
     ["verb"]
   ),
