@@ -40,19 +40,19 @@ const data = [
     ["梦的延续"],
     ["The continuation of a dream"],
     [[["夢", "ゆめ"]], "の", "つづき"],
-    ["『Again』", "anime"]
+    ["『Again』"]
   ),
   new Sentence(
     ["明明应该一直在追逐着的"],
     ["I should have been chasing"],
     [[["追", "お"], "いかけ", ["ていた", "る"]], "はず", "なのに"],
-    ["『Again』", "anime"]
+    ["『Again』"]
   ),
   new Sentence(
     ["曲折的道路"],
     ["Curved pathes"],
     [[["曲", "ま"], "が", ["りくねった", "る"]]],
-    ["『Again』", "anime"]
+    ["『Again』"]
   ),
   new Sentence(
     ["人在细小的道路上摔倒"],
@@ -63,7 +63,7 @@ const data = [
       "に",
       "つまづく",
     ],
-    ["『Again』", "anime"]
+    ["『Again』"]
   ),
   new Sentence(
     ["爱丽丝不吃"],
