@@ -350,7 +350,7 @@ const data = [
   new Sentence(
     ["那个人不是买了吗"],
     ["Wasn't that that person was the one to buy"],
-    ["その人", "が", [["買うんじゃなかった", "買うんだ"], "の"]],
+    ["その人", "が", [["買うんじゃなかった", "かうんだ"], "の"]],
     ["adj-adv"]
   ),
   // ジムなのだ
